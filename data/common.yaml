@@ -1,0 +1,32 @@
+---
+cloud_formation::region: 'us-west-1'
+cloud_formation::cluster::cluster_name: 'bns-cluster-1'
+cloud_formation::cluster::iam_role_name: 'bns-ecs-instance-role'
+cloud_formation::cluster::security_group_name: 'bns-sg'
+cloud_formation::cluster::vpc_internet_gateway_name: 'bns-igw'
+cloud_formation::cluster::vpc_subnet_name: 'bns-subnet'
+cloud_formation::cluster::vpc_routetable_name: 'bns-options'
+cloud_formation::cluster::vpc_name: 'bns-vpc'
+cloud_formation::cluster::vpc_dhcp_options_name: 'bns-options'
+cloud_formation::cluster::task_definition_name: 'bns-task'
+cloud_formation::cluster::instance_names:
+    - 'bns-instance'
+
+
+cloud_formation::stack::security_group_name: 'bns-sg'
+cloud_formation::stack::vpc_internet_gateway_name: 'bns-igw'
+cloud_formation::stack::vpc_subnet_name: 'bns-subnet'
+cloud_formation::stack::vpc_routetable_name: 'bns-options'
+cloud_formation::stack::vpc_name: 'bns-vpc'
+cloud_formation::stack::vpc_dhcp_options_name: 'bns-options'
+cloud_formation::stack::instance_names:
+    - 'bns-instance'
+
+
+cloud_formation::security::security_group_name: 'bns-sg'
+cloud_formation::security::vpc_internet_gateway_name: 'bns-igw'
+cloud_formation::security::vpc_subnet_name: 'bns-subnet'
+cloud_formation::security::vpc_routetable_name: 'bns-security-options'
+cloud_formation::security::vpc_name: 'bns-vpc'
+cloud_formation::security::vpc_dhcp_options_name: 'bns-security-options'
+
